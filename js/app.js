@@ -1,176 +1,220 @@
 let allWords = [];
-let currentQuizWord = null;
+let currentLesson = null;
+let currentIndex = 0;
+let reversed = localStorage.getItem("reversed") === "true";
+let unknownWords = JSON.parse(localStorage.getItem("unknownWords")) || [];
+
+// Yalnız BİR ad istifadə edirik
+const UNKNOWN_LESSON = "Bilmediklərim";
 
 /* ---------------- LOAD JSON ---------------- */
-
 async function loadWords() {
   try {
     const response = await fetch("js/words.json");
-    const data = await response.json();
+    allWords = await response.json();
 
-    // Əgər sən lesson formatında saxlamısansa
-    if (data[0].words) {
-      data.forEach(lesson => {
-        lesson.words.forEach(word => {
-          allWords.push({ ...word, lesson: lesson.lesson });
-        });
-      });
-    } else {
-      // Əgər düz array formatındadırsa
-      allWords = data;
+    // Köhnə səhv adla yaradılmış dərsi təmizlə (bir dəfəlik düzəliş)
+    allWords = allWords.filter(w => w.lesson !== "Bilmədiklərim");
+
+    if (unknownWords.length > 0) {
+      addUnknownLesson();
     }
 
-    generateLessonButtons();
+    generateLessonSelector();
   } catch (error) {
     console.error("JSON yüklənmədi:", error);
   }
 }
 
-/* ---------------- LESSON MODE ---------------- */
-
-function generateLessonButtons() {
-  const lessonContainer = document.getElementById("lesson-buttons");
-  if (!lessonContainer) return;
-
-  const lessons = [...new Set(allWords.map(w => w.lesson))];
-
-  lessons.forEach(lesson => {
-    const btn = document.createElement("button");
-    btn.className = "btn";
-    btn.textContent = "Lesson " + lesson;
-    btn.onclick = () => showLessonWords(lesson);
-    lessonContainer.appendChild(btn);
-  });
+/* ---------------- UNKNOWN LESSON YARAT ---------------- */
+function addUnknownLesson() {
+  const exists = allWords.some(w => w.lesson === UNKNOWN_LESSON);
+  if (!exists) {
+    allWords.push({ lesson: UNKNOWN_LESSON, words: unknownWords });
+  }
 }
-function showLessonWords(lessonNumber) {
-  const list = document.getElementById("word-list");
-  list.innerHTML = "";
 
-  const lessonWords = allWords.filter(w => w.lesson == lessonNumber);
+/* ---------------- LESSON SELECTOR ---------------- */
+function generateLessonSelector() {
+  const selector = document.getElementById("lesson-select");
+  if (!selector) return;
 
-  lessonWords.forEach(word => {
-    const card = document.createElement("div");
-    card.className = "card";
+  selector.innerHTML = '<option value="" disabled selected>Dərs seçin</option>';
 
-    card.innerHTML = `
-      <div class="card-inner">
-        <div class="card-front">
-          <strong>${word.word}</strong>
-          <br>
-          <em>"${word.example || ""}"</em>
-        </div>
-        <div class="card-back">
-          <strong>${word.meaning}</strong>
-          <br>
-          <em>"${word.example_az || word.example || ""}"</em>
-        </div>
-      </div>
-    `;
+  allWords.forEach(lesson => {
+    const option = document.createElement("option");
+    option.value = lesson.lesson;
+    option.textContent = lesson.lesson === UNKNOWN_LESSON ? "📚 Bilmediklərim" : lesson.lesson;
+    selector.appendChild(option);
+  });
 
-    card.addEventListener("click", () => {
-      card.classList.toggle("flipped");
+  // Event-i yalnız BİR dəfə əlavə edirik (hər dəfə yox)
+  if (!selector.dataset.bound) {
+    selector.addEventListener("change", (e) => {
+      if (e.target.value) showLessonWords(e.target.value);
     });
-
-    list.appendChild(card);
-  });
+    selector.dataset.bound = "true";
+  }
 }
 
+/* ---------------- SHOW LESSON WORDS ---------------- */
+function showLessonWords(lessonName) {
+  currentLesson = lessonName;
+  currentIndex = 0;
 
+  const lessonObj = allWords.find(w => w.lesson === lessonName);
+  const lessonWords = lessonObj ? lessonObj.words : [];
 
+  if (lessonWords.length > 0) {
+    updateCard(lessonWords[currentIndex]);
+  } else {
+    document.getElementById("card-word").textContent = "Söz yoxdur";
+  }
 
-/* ---------------- REVIEW MODE ---------------- */
-
-function shuffleArray(array) {
-  return array.sort(() => Math.random() - 0.5);
+  document.getElementById("prev-btn").onclick = () => navigate(-1, lessonWords);
+  document.getElementById("next-btn").onclick = () => navigate(1, lessonWords);
+  document.getElementById("shuffle-btn").onclick = () => shuffleWords(lessonWords);
+  document.getElementById("unknown-btn").onclick = () => addToUnknownWords(lessonWords);
 }
 
-function showAllWords() {
-  const list = document.getElementById("review-list");
-  if (!list) return;
+/* ---------------- UPDATE CARD ---------------- */
+function updateCard(word) {
+  const card = document.getElementById("word-card");
+  card.classList.remove("flipped");
 
-  list.innerHTML = "";
-  const shuffled = shuffleArray([...allWords]);
+  if (reversed) {
+    // Azərbaycanca ön üz, ingiliscə arxa üz
+    document.getElementById("card-word").textContent = word.meaning;
+    document.getElementById("card-example").textContent = word.example_az || "";
+    document.getElementById("card-pronunciation-az").textContent = "";
+    document.getElementById("card-meaning").textContent = word.word;
+    document.getElementById("card-example-az").textContent = word.example || "";
+  } else {
+    // İngiliscə ön üz, Azərbaycanca arxa üz (normal rejim)
+    document.getElementById("card-word").textContent = word.word;
+    document.getElementById("card-example").textContent = word.example || "";
+    document.getElementById("card-pronunciation-az").textContent =
+      word.pronunciation_az ? `Oxunur: ${word.pronunciation_az}` : "";
+    document.getElementById("card-meaning").textContent = word.meaning;
+    document.getElementById("card-example-az").textContent = word.example_az || word.example || "";
+  }
 
-  shuffled.forEach(word => {
-    const div = document.createElement("div");
-    div.innerHTML = `
-      <strong>${word.word}</strong> - ${word.meaning}
-    `;
-    list.appendChild(div);
-  });
+  // "Bildim" düyməsi yalnız "Bilmediklərim" dərsində görünür
+  const learnedBtn = document.getElementById("learned-btn");
+  if (currentLesson === UNKNOWN_LESSON) {
+    learnedBtn.style.display = "block";
+    learnedBtn.onclick = () => removeFromUnknownWords(word);
+  } else {
+    learnedBtn.style.display = "none";
+  }
 }
 
-function showWeakWords() {
-  const list = document.getElementById("review-list");
-  list.innerHTML = "";
+/* ---------------- NAVIGATE ---------------- */
+function navigate(direction, words) {
+  if (words.length === 0) return;
+  currentIndex += direction;
+  if (currentIndex < 0) currentIndex = words.length - 1;
+  if (currentIndex >= words.length) currentIndex = 0;
+  updateCard(words[currentIndex]);
+}
 
-  const weakWords = allWords.filter(word => {
-    const wrong = localStorage.getItem(word.word + "_wrong");
-    return wrong && parseInt(wrong) >= 2;
-  });
+/* ---------------- SHUFFLE ---------------- */
+function shuffleWords(words) {
+  const shuffled = [...words].sort(() => Math.random() - 0.5);
+  const lessonIndex = allWords.findIndex(w => w.lesson === currentLesson);
+  if (lessonIndex !== -1) allWords[lessonIndex].words = shuffled;
+  currentIndex = 0;
+  updateCard(shuffled[currentIndex]);
+}
 
-  if (weakWords.length === 0) {
-    list.innerHTML = "<p>Weak words yoxdur 👍</p>";
+/* ---------------- ADD TO UNKNOWN ---------------- */
+function addToUnknownWords(lessonWords) {
+  if (lessonWords.length === 0) return;
+
+  const currentWord = lessonWords[currentIndex];
+  const isAlreadyAdded = unknownWords.some(
+    uw => uw.word === currentWord.word && uw.lesson === currentLesson
+  );
+
+  if (!isAlreadyAdded) {
+    unknownWords.push({
+      word: currentWord.word,
+      meaning: currentWord.meaning,
+      lesson: currentLesson,
+      example: currentWord.example,
+      example_az: currentWord.example_az,
+      pronunciation_az: currentWord.pronunciation_az
+    });
+    localStorage.setItem("unknownWords", JSON.stringify(unknownWords));
+    alert("Bilmədiyiniz sözlər siyahısına əlavə edildi!");
+  } else {
+    alert("Bu söz artıq siyahıda var!");
+  }
+}
+
+/* ---------------- REMOVE FROM UNKNOWN ("Bildim") ---------------- */
+function removeFromUnknownWords(word) {
+  unknownWords = unknownWords.filter(
+    uw => !(uw.word === word.word && uw.lesson === word.lesson)
+  );
+  localStorage.setItem("unknownWords", JSON.stringify(unknownWords));
+
+  const lessonIndex = allWords.findIndex(w => w.lesson === UNKNOWN_LESSON);
+  if (lessonIndex === -1) return;
+
+  allWords[lessonIndex].words = allWords[lessonIndex].words.filter(
+    w => !(w.word === word.word && w.lesson === word.lesson)
+  );
+
+  if (allWords[lessonIndex].words.length === 0) {
+    allWords.splice(lessonIndex, 1);
+    generateLessonSelector();
+    document.getElementById("lesson-select").value = "";
+    currentLesson = null;
+    alert("Bilmediklərim siyahısı boşaldı! 🎉");
+  } else {
+    if (currentIndex >= allWords[lessonIndex].words.length) {
+      currentIndex = 0;
+    }
+    updateCard(allWords[lessonIndex].words[currentIndex]);
+  }
+}
+
+/* ---------------- SHOW UNKNOWN LESSON ---------------- */
+document.getElementById("unknown-lesson-btn").onclick = () => {
+  if (unknownWords.length === 0) {
+    alert("Bilmədiyiniz söz yoxdur!");
     return;
   }
+  addUnknownLesson();      // varsa yenisi yaratmır
+  generateLessonSelector();
+  document.getElementById("lesson-select").value = UNKNOWN_LESSON;
+  showLessonWords(UNKNOWN_LESSON);
+};
 
-  weakWords.forEach(word => {
-    const div = document.createElement("div");
-    div.innerHTML = `
-      <strong>${word.word}</strong> - ${word.meaning}
-    `;
-    list.appendChild(div);
-  });
-}
-
-/* ---------------- QUIZ MODE ---------------- */
-
-function getRandomWord() {
-  const randomIndex = Math.floor(Math.random() * allWords.length);
-  return allWords[randomIndex];
-}
-
-function startQuiz() {
-  const quizWordElement = document.getElementById("quiz-word");
-  if (!quizWordElement) return;
-
-  currentQuizWord = getRandomWord();
-  quizWordElement.textContent = currentQuizWord.word;
-
-  document.getElementById("quiz-answer").value = "";
-  document.getElementById("quiz-result").textContent = "";
-}
-
-function checkAnswer() {
-  const input = document.getElementById("quiz-answer");
-  const result = document.getElementById("quiz-result");
-
-  if (!currentQuizWord) return;
-
-  const userAnswer = input.value.trim().toLowerCase();
-  const correctAnswer = currentQuizWord.meaning.toLowerCase();
-
-  if (userAnswer === correctAnswer) {
-    result.textContent = "✅ Correct!";
-    result.style.color = "green";
-
-    let correctCount = localStorage.getItem(currentQuizWord.word + "_correct") || 0;
-    localStorage.setItem(currentQuizWord.word + "_correct", parseInt(correctCount) + 1);
-
-  } else {
-    result.textContent = "❌ Wrong! Correct: " + currentQuizWord.meaning;
-    result.style.color = "red";
-
-    let wrongCount = localStorage.getItem(currentQuizWord.word + "_wrong") || 0;
-    localStorage.setItem(currentQuizWord.word + "_wrong", parseInt(wrongCount) + 1);
-  }
-
-  setTimeout(startQuiz, 1500);
-}
-
-/* ---------------- AUTO START ---------------- */
-
+/* ---------------- CARD FLIP ---------------- */
 document.addEventListener("DOMContentLoaded", () => {
   loadWords();
-  startQuiz();
+
+  const card = document.getElementById("word-card");
+  card.addEventListener("click", () => card.classList.toggle("flipped"));
+
+  // 🔄 Çevir düyməsi: istiqaməti dəyiş
+  const reverseBtn = document.getElementById("reverse-btn");
+  updateReverseBtnText(reverseBtn);
+  reverseBtn.addEventListener("click", () => {
+    reversed = !reversed;
+    localStorage.setItem("reversed", reversed); // seçim yadda qalır
+    updateReverseBtnText(reverseBtn);
+
+    // Cari sözü yeni rejimdə yenidən göstər
+    const lessonObj = allWords.find(w => w.lesson === currentLesson);
+    if (lessonObj && lessonObj.words.length > 0) {
+      updateCard(lessonObj.words[currentIndex]);
+    }
+  });
 });
+
+function updateReverseBtnText(btn) {
+  btn.textContent = reversed ? "🔄 İngiliscə göstər" : "🔄 Azərbaycanca göstər";
+}f
