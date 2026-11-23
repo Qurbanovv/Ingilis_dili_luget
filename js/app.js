@@ -217,4 +217,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function updateReverseBtnText(btn) {
   btn.textContent = reversed ? "🔄 İngiliscə göstər" : "🔄 Azərbaycanca göstər";
-}f
+}

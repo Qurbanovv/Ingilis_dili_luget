@@ -36,387 +36,7 @@
     ]
   },
   {
-    "lesson": "Organiser 6 FRIENDS",
-    "words": [
-      {
-        "word": "Lifelong",
-        "meaning": "Ömür boyu",
-        "pronunciation_az": "Laiflong",
-        "example": "She is my lifelong friend.",
-        "example_az": "O, mənim ömürlük dostumdur.",
-        "level": "B1"
-      },
-      {
-        "word": "Mine",
-        "meaning": "Mənim",
-        "pronunciation_az": "Mayn",
-        "example": "This book is mine.",
-        "example_az": "Bu kitab mənimdir.",
-        "level": "A1"
-      },
-      {
-        "word": "Acquaintance",
-        "meaning": "Tanış",
-        "pronunciation_az": "Əkweyntens",
-        "example": "He is an old acquaintance of mine.",
-        "example_az": "O, mənim köhnə tanışımdır.",
-        "level": "B1"
-      },
-      {
-        "word": "Made",
-        "meaning": "Etmək, hazırlamaq",
-        "pronunciation_az": "Meyd",
-        "example": "She made a cake for the party.",
-        "example_az": "O, partiya üçün tort hazırladı.",
-        "level": "A1"
-      },
-      {
-        "word": "True friends",
-        "meaning": "Sadiq dostlar",
-        "pronunciation_az": "Tru frends",
-        "example": "They are true friends.",
-        "example_az": "Onlar sadiq dostlardır.",
-        "level": "A2"
-      },
-      {
-        "word": "Made friends with",
-        "meaning": "Dostlaşmaq, dostluq etmək",
-        "pronunciation_az": "Meyd frends við",
-        "example": "She made friends with her neighbor.",
-        "example_az": "O, qonşusu ilə dostlaşdı.",
-        "level": "A2"
-      },
-      {
-        "word": "Met him through",
-        "meaning": "Onunla tanış olmaq (vasitəsi ilə)",
-        "pronunciation_az": "Met him θru",
-        "example": "I met him through a mutual friend.",
-        "example_az": "Mən onu ortaq dost vasitəsi ilə tanış oldum.",
-        "level": "B1"
-      },
-      {
-        "word": "Pleased",
-        "meaning": "Məmnun, şad",
-        "pronunciation_az": "Plizd",
-        "example": "I am pleased to meet you.",
-        "example_az": "Sizinlə tanış olmağa məmnunam.",
-        "level": "A2"
-      },
-      {
-        "word": "Friendly with",
-        "meaning": "Dostca münasibət saxlamaq",
-        "pronunciation_az": "Frendli við",
-        "example": "She is friendly with everyone.",
-        "example_az": "O, hər kəslə dostca münasibətdədir.",
-        "level": "A2"
-      },
-      {
-        "word": "Got to know",
-        "meaning": "Tanış olmaq, öyrənmək",
-        "pronunciation_az": "Got tu nou",
-        "example": "I got to know him better over time.",
-        "example_az": "Mən onu zaman keçdikcə daha yaxşı tanıdım.",
-        "level": "B1"
-      },
-      {
-        "word": "Introduced",
-        "meaning": "Tanıtdırmaq, təqdim etmək",
-        "pronunciation_az": "İntrədyust",
-        "example": "He introduced me to his family.",
-        "example_az": "O, mənə ailəsini təqdim etdi.",
-        "level": "A2"
-      }
-    ]
-  },
-  {
-    "lesson": "Vocabulary: Relationships and Communication",
-    "words": [
-      {
-        "word": "In common",
-        "meaning": "Ortaq, eyni",
-        "pronunciation_az": "İn komın",
-        "example": "We have a lot in common.",
-        "example_az": "Bizim çox ortaq cəhətimiz var.",
-        "level": "A2"
-      },
-      {
-        "word": "Still",
-        "meaning": "Hələ, hələ də",
-        "pronunciation_az": "Stil",
-        "example": "He is still my best friend.",
-        "example_az": "O, hələ də mənim ən yaxın dostumdur.",
-        "level": "A1"
-      },
-      {
-        "word": "In touch",
-        "meaning": "Əlaqədə olmaq",
-        "pronunciation_az": "İn taç",
-        "example": "We keep in touch.",
-        "example_az": "Biz əlaqədə qalıriq.",
-        "level": "A2"
-      },
-      {
-        "word": "Been",
-        "meaning": "Olub, keçmiş zaman",
-        "pronunciation_az": "Bin",
-        "example": "I have been busy.",
-        "example_az": "Mən məşğul olmuşam.",
-        "level": "A1"
-      },
-      {
-        "word": "Recently",
-        "meaning": "Son zamanlar, yaxın vaxtlarda",
-        "pronunciation_az": "Risntli",
-        "example": "I saw him recently.",
-        "example_az": "Mən onu son zamanlar gördüm.",
-        "level": "A2"
-      },
-      {
-        "word": "Fell out",
-        "meaning": "Dostluq pozulmaq, münaqişə etmək",
-        "pronunciation_az": "Fel aut",
-        "example": "They fell out over a small issue.",
-        "example_az": "Onlar kiçik bir məsələ üzərində dostluqları pozuldu.",
-        "level": "B1"
-      },
-      {
-        "word": "Isn't speaking",
-        "meaning": "Danışmır, söhbət etmir",
-        "pronunciation_az": "İznt spikın",
-        "example": "She isn't speaking to him.",
-        "example_az": "O, onunla danışmır.",
-        "level": "A2"
-      },
-      {
-        "word": "Row",
-        "meaning": "Münaqişə, davan",
-        "pronunciation_az": "Rau",
-        "example": "They had a big row.",
-        "example_az": "Onların böyük münaqişəsi var idi.",
-        "level": "B1"
-      },
-      {
-        "word": "Go our separate ways",
-        "meaning": "Ayrı yollarla getmək, ayrılmaq",
-        "pronunciation_az": "Qo auər seprıt veyz",
-        "example": "After the argument, they went their separate ways.",
-        "example_az": "Münaqişədən sonra onlar ayrı yollarla getdilər.",
-        "level": "B2"
-      },
-      {
-        "word": "Drifted apart",
-        "meaning": "Uzaqlaşmaq, əlaqə itirmək",
-        "pronunciation_az": "Driftid əpət",
-        "example": "We drifted apart over the years.",
-        "example_az": "Biz illər keçdikcə uzaqlaşdıq.",
-        "level": "B2"
-      }
-    ]
-  },
-  {
-    "lesson": "Vocabulary: Daily Life and Objects",
-    "words": [
-      {
-        "word": "Just arrived",
-        "meaning": "Yeni gəlmiş, az əvvəl çatmış",
-        "pronunciation_az": "Cast ərayvd",
-        "example": "He has just arrived from Baku.",
-        "example_az": "O, Bakıdan yeni gəlmişdir.",
-        "level": "A2"
-      },
-      {
-        "word": "Teenagers",
-        "meaning": "Gənclər, yeniyetmələr",
-        "pronunciation_az": "Tin-eycərz",
-        "example": "Teenagers often spend time with friends.",
-        "example_az": "Gənclər adətən dostları ilə vaxt keçirirlər.",
-        "level": "A1"
-      },
-      {
-        "word": "Sheet",
-        "meaning": "Vərəq, çarşaf",
-        "pronunciation_az": "Şit",
-        "example": "There is a sheet of paper on the table.",
-        "example_az": "Masa üzərində bir vərəq kağız var.",
-        "level": "A1"
-      },
-      {
-        "word": "Town",
-        "meaning": "Şəhər, qəsəbə",
-        "pronunciation_az": "Taun",
-        "example": "I live in a small town.",
-        "example_az": "Mən kiçik bir qəsəbədə yaşayiram.",
-        "level": "A1"
-      },
-      {
-        "word": "Plate",
-        "meaning": "Tabaq",
-        "pronunciation_az": "Pleyt",
-        "example": "Put the food on the plate.",
-        "example_az": "Yeməyi tabağa qoy.",
-        "level": "A1"
-      },
-      {
-        "word": "Between",
-        "meaning": "Arasında, arasında",
-        "pronunciation_az": "Bitvin",
-        "example": "The park is between the school and the hospital.",
-        "example_az": "Park məktəb və xəstaxana arasında yerləşir.",
-        "level": "A1"
-      },
-      {
-        "word": "Been",
-        "meaning": "Olub, keçmiş zaman",
-        "pronunciation_az": "Bin",
-        "example": "I have been to Paris.",
-        "example_az": "Mən Parisdə olmuşam.",
-        "level": "A1"
-      },
-      {
-        "word": "Bring",
-        "meaning": "Gətirmək",
-        "pronunciation_az": "Briñ",
-        "example": "Can you bring me a glass of water?",
-        "example_az": "Mənə bir stəkan su gətirə bilərsənmi?",
-        "level": "A1"
-      },
-      {
-        "word": "Several",
-        "meaning": "Bir neçə, birkaç",
-        "pronunciation_az": "Sevərəl",
-        "example": "I have several books to read.",
-        "example_az": "Mənim oxumaq üçün bir neçə kitabım var.",
-        "level": "A2"
-      },
-      {
-        "word": "Order",
-        "meaning": "Sifariş, əmr",
-        "pronunciation_az": "Ordər",
-        "example": "I placed an order for a new phone.",
-        "example_az": "Mən yeni telefon üçün sifariş verdim.",
-        "level": "A2"
-      },
-      {
-        "word": "Advertisement",
-        "meaning": "Reklam, elan",
-        "pronunciation_az": "Ədvərtaizmənt",
-        "example": "I saw an advertisement for a new car.",
-        "example_az": "Mən yeni avtomobil üçün reklam gördüm.",
-        "level": "A2"
-      }
-    ]
-  },
-  {
-    "lesson": "Ket 5 Test 2",
-    "words": [
-      {
-        "word": "Just arrived",
-        "meaning": "Yeni gəlmiş, az əvvəl çatmış",
-        "pronunciation_az": "Cast ərayvd",
-        "example": "He has just arrived from Baku.",
-        "example_az": "O, Bakıdan yeni gəlmişdir.",
-        "level": "A2"
-      },
-      {
-        "word": "Luggage",
-        "meaning": "Bagaj, çanta",
-        "pronunciation_az": "Laqic",
-        "example": "He packed his luggage for the trip.",
-        "example_az": "O, səfər üçün bagajını hazırladı.",
-        "level": "A2"
-      },
-      {
-        "word": "Through",
-        "meaning": "Vasitəsi ilə, aralıqdan",
-        "pronunciation_az": "θru",
-        "example": "We walked through the park.",
-        "example_az": "Biz parkdan keçdik.",
-        "level": "A2"
-      },
-      {
-        "word": "Gate",
-        "meaning": "Qapı, darvaza",
-        "pronunciation_az": "Geyt",
-        "example": "The flight is boarding at gate 5.",
-        "example_az": "Reys 5-ci qapıdan minir.",
-        "level": "A2"
-      },
-      {
-        "word": "Cheaper",
-        "meaning": "Ucuz, daha ucuz",
-        "pronunciation_az": "Çipər",
-        "example": "This shirt is cheaper than that one.",
-        "example_az": "Bu köynək o birindən ucuzdur.",
-        "level": "A1"
-      },
-      {
-        "word": "Let",
-        "meaning": "İcazə vermək, buraxmaq",
-        "pronunciation_az": "Let",
-        "example": "Let me help you.",
-        "example_az": "Mənə kömək etməyə icazə ver.",
-        "level": "A1"
-      },
-      {
-        "word": "Carrying",
-        "meaning": "Daşımaq, götürmək",
-        "pronunciation_az": "Kəriyıñ",
-        "example": "She is carrying a heavy bag.",
-        "example_az": "O, ağır çanta daşıyır.",
-        "level": "A2"
-      },
-      {
-        "word": "Sit",
-        "meaning": "Oturmaq",
-        "pronunciation_az": "Sit",
-        "example": "Please sit down.",
-        "example_az": "Zəhmət olmasa, oturun.",
-        "level": "A1"
-      },
-      {
-        "word": "Seats",
-        "meaning": "Oturacaq yerlər, yerlər",
-        "pronunciation_az": "Sits",
-        "example": "There are many empty seats on the bus.",
-        "example_az": "Avtobusa çox boş oturacaq yerlər var.",
-        "level": "A1"
-      },
-      {
-        "word": "Heavy",
-        "meaning": "Ağır",
-        "pronunciation_az": "Hevi",
-        "example": "This box is very heavy.",
-        "example_az": "Bu qutu çox ağırdır.",
-        "level": "A1"
-      },
-      {
-        "word": "Passengers",
-        "meaning": "Sərnişinlər",
-        "pronunciation_az": "Pəsincərz",
-        "example": "The passengers are boarding the plane.",
-        "example_az": "Sərnişinlər təyyarəyə minirlər.",
-        "level": "A2"
-      },
-      {
-        "word": "Opposite",
-        "meaning": "Qarşısında, əks",
-        "pronunciation_az": "Opəzit",
-        "example": "The bank is opposite the park.",
-        "example_az": "Bank parkın qarşısındadır.",
-        "level": "A2"
-      },
-      {
-        "word": "Weekly",
-        "meaning": "Həftəlik",
-        "pronunciation_az": "Vikli",
-        "example": "This is a weekly magazine.",
-        "example_az": "Bu həftəlik jurnaldır.",
-        "level": "A2"
-      }    
-    ]
-  },
-  {
-    "lesson": "Kingsway",
+    "lesson": "Kingsway 1",
     "words": [
       {
         "word": "Clothing",
@@ -576,6 +196,14 @@
         "pronunciation_az": "Vizdəm",
         "example": "The old man shared his wisdom.",
         "example_az": "Qoca öz müdrikliyini bölüşdü.",
+        "level": "B1"
+      },
+      {
+        "word": "Envelope",
+        "meaning": "zərf",
+        "pronunciation_az": "Envəlop",
+        "example": "I opened the envelope",
+        "example_az": "Zərfi açdım",
         "level": "B1"
       }
     ]
@@ -1091,6 +719,227 @@
         "example": "The village is peaceful in the morning.",
         "example_az": "Kənd səhərlər dinc olur.",
         "level": "A2"
+      }
+    ]
+  },
+  {
+    "lesson": "The Perfect Family Member",
+    "words": [
+      {
+        "word": "Member",
+        "meaning": "Üzv",
+        "pronunciation_az": "Membər",
+        "example": "She is a member of our family.",
+        "example_az": "O, bizim ailəmizin üzvüdür.",
+        "level": "A1"
+      },
+      {
+        "word": "Someone",
+        "meaning": "Kimsə",
+        "pronunciation_az": "Samvan",
+        "example": "Someone is knocking at the door.",
+        "example_az": "Kimsə qapını döyür.",
+        "level": "A1"
+      },
+      {
+        "word": "Care",
+        "meaning": "Qayğı göstərmək / diqqət göstərmək",
+        "pronunciation_az": "Keər",
+        "example": "Parents care about their children.",
+        "example_az": "Valideynlər uşaqları barədə qayğı göstərirlər.",
+        "level": "A2"
+      },
+      {
+        "word": "Others",
+        "meaning": "Başqaları",
+        "pronunciation_az": "Azərz",
+        "example": "Help others when they need it.",
+        "example_az": "Başqalarına ehtiyac olduqda kömək et.",
+        "level": "A2"
+      },
+      {
+        "word": "Delicious",
+        "meaning": "Ləzzətli",
+        "pronunciation_az": "Dilişəs",
+        "example": "This soup is delicious.",
+        "example_az": "Bu şorba çox ləzzətlidir.",
+        "level": "A1"
+      },
+      {
+        "word": "Meal",
+        "meaning": "Yemək",
+        "pronunciation_az": "Mil",
+        "example": "We have three meals every day.",
+        "example_az": "Biz hər gün üç dəfə yemək yeyirik.",
+        "level": "A1"
+      },
+      {
+        "word": "Advice",
+        "meaning": "Məsləhət",
+        "pronunciation_az": "Ədvays",
+        "example": "She gave me good advice.",
+        "example_az": "O, mənə yaxşı məsləhət verdi.",
+        "level": "A2"
+      },
+      {
+        "word": "Better",
+        "meaning": "Daha yaxşı",
+        "pronunciation_az": "Betər",
+        "example": "This book is better than that one.",
+        "example_az": "Bu kitab o birindən daha yaxşıdır.",
+        "level": "A1"
+      },
+      {
+        "word": "Feel",
+        "meaning": "Hiss etmək",
+        "pronunciation_az": "Fil",
+        "example": "I feel happy today.",
+        "example_az": "Mən bu gün özümü şad hiss edirəm.",
+        "level": "A1"
+      },
+      {
+        "word": "Plan",
+        "meaning": "Plan etmək / plan",
+        "pronunciation_az": "Plen",
+        "example": "We plan to travel in summer.",
+        "example_az": "Biz yayda səfər etməyi planlaşdırırıq.",
+        "level": "A1"
+      },
+      {
+        "word": "Activity",
+        "meaning": "Fəaliyyət, iş",
+        "pronunciation_az": "Əktiviti",
+        "example": "Swimming is my favorite activity.",
+        "example_az": "Üzmə sevimli fəaliyyətimdir.",
+        "level": "A2"
+      },
+      {
+        "word": "Trust",
+        "meaning": "Etibar etmək / güvənmək",
+        "pronunciation_az": "Trast",
+        "example": "You can trust me.",
+        "example_az": "Mənə güvənə bilərsən.",
+        "level": "A2"
+      },
+      {
+        "word": "Hardworking",
+        "meaning": "Çalışqan",
+        "pronunciation_az": "Hardvörkinq",
+        "example": "He is a hardworking student.",
+        "example_az": "O, çalışqan tələbədir.",
+        "level": "A2"
+      },
+      {
+        "word": "Safe",
+        "meaning": "Təhlükəsiz",
+        "pronunciation_az": "Seyf",
+        "example": "The children are safe at home.",
+        "example_az": "Uşaqlar evdə təhlükəsizdirlər.",
+        "level": "A1"
+      },
+      {
+        "word": "Fill",
+        "meaning": "Doldurmaq",
+        "pronunciation_az": "Fil",
+        "example": "Fill the glass with water.",
+        "example_az": "Stəkanı su ilə doldur.",
+        "level": "A1"
+      },
+      {
+        "word": "Who",
+        "meaning": "Kim (insanlar üçün sual əvəzliyi)",
+        "pronunciation_az": "Hu",
+        "example": "The girl who is sitting there is my sister.",
+        "example_az": "Orada oturan qız mənim bacımdır.",
+        "level": "A2"
+      },
+      {
+        "word": "Whom",
+        "meaning": "Kimə / Kimi (cümlədə obyekt rolunda olan qədim forması)",
+        "pronunciation_az": "Hum",
+        "example": "The man whom I met yesterday is a doctor.",
+        "example_az": "Dünən tanış olduğum adam həkimdir.",
+        "level": "B1"
+      },
+      {
+        "word": "Whose",
+        "meaning": "Kimin (mənsubiyyət bildirir)",
+        "pronunciation_az": "Huz",
+        "example": "The boy whose bag is red is my friend.",
+        "example_az": "Çantası qırmızı olan oğlan mənim dostumdur.",
+        "level": "A2"
+      },
+      {
+        "word": "Where",
+        "meaning": "Harada / Hardan (yer üçün bağlayıcı)",
+        "pronunciation_az": "Vеər",
+        "example": "This is the house where I was born.",
+        "example_az": "Bu, mənim doğulduğum evdir.",
+        "level": "A2"
+      },
+      {
+        "word": "Which",
+        "meaning": "Hansı / Hansı ki (əşyalar və heyvanlar üçün)",
+        "pronunciation_az": "Viç",
+        "example": "The book which I read was interesting.",
+        "example_az": "Oxuduğum kitab maraqlı idi.",
+        "level": "A2"
+      },
+      {
+        "word": "Helpful",
+        "meaning": "Faydalı, köməkçi",
+        "pronunciation_az": "Helpful",
+        "example": "The information was very helpful.",
+        "example_az": "Məlumat çox faydalı oldu.",
+        "level": "A2"
+      },
+      {
+        "word": "Make",
+        "meaning": "Etmək, yaratmaq",
+        "pronunciation_az": "Meyk",
+        "example": "She makes a cake for us.",
+        "example_az": "O, bizim üçün tort hazırlayır.",
+        "level": "A1"
+      },
+      {
+        "word": "All of them",
+        "meaning": "Onların hamısı",
+        "pronunciation_az": "Ol ov dem",
+        "example": "All of them came to the party.",
+        "example_az": "Onların hamısıpartyaya gəldilər.",
+        "level": "A1"
+      },
+      {
+        "word": "Carefully",
+        "meaning": "Diqqətlə, ehtiyatla",
+        "pronunciation_az": "Kefulü",
+        "example": "Read the question carefully.",
+        "example_az": "Sualı diqqətlə oxu.",
+        "level": "A1"
+      },
+      {
+        "word": "Will",
+        "meaning": "-acək / -əcək (gələcək zaman köməkçi feili)",
+        "pronunciation_az": "Vil",
+        "example": "I will help you tomorrow.",
+        "example_az": "Mən sabah sənə kömək edəcəyəm.",
+        "level": "A1"
+      },
+      {
+        "word": "Logic",
+        "meaning": "Məntiq",
+        "pronunciation_az": "Loşik",
+        "example": "Your answer has logic.",
+        "example_az": "Sənin cavabının məntiqi var.",
+        "level": "B1"
+      },
+      {
+        "word": "Meaningful",
+        "meaning": "Mənalı, dolğun",
+        "pronunciation_az": "Mininqful",
+        "example": "She said something meaningful.",
+        "example_az": "O, mənalı bir şey dedi.",
+        "level": "B1"
       }
     ]
   }

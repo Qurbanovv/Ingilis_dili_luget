@@ -1,0 +1,312 @@
+[
+  {
+    "id": "can-could",
+    "title": "Can / Could",
+    "title_az": "Bacarıq və icazə bildirən feillər",
+    "level": "A1",
+    "summary": "Bacarıq, icazə və xahişi necə ifadə edək.",
+    "intro": "Can və could modal feillərdir. Onlardan sonra həmişə feilin sadə forması gəlir və he/she/it ilə -s artırılmır.",
+    "sections": [
+      {
+        "heading": "Can: indiki zamanda bacarıq",
+        "text": "Bir şeyi bacardığımızı demək üçün can işlədilir.",
+        "examples": [
+          {
+            "en": "I can swim.",
+            "az": "Mən üzə bilirəm."
+          },
+          {
+            "en": "She can speak three languages.",
+            "az": "O, üç dildə danışa bilir."
+          }
+        ]
+      },
+      {
+        "heading": "Can: icazə və xahiş",
+        "text": "Can ilə icazə istəyə və ya xahiş edə bilərik.",
+        "examples": [
+          {
+            "en": "Can I open the window?",
+            "az": "Pəncərəni aça bilərəm?"
+          },
+          {
+            "en": "Can you help me?",
+            "az": "Mənə kömək edə bilərsən?"
+          }
+        ]
+      },
+      {
+        "heading": "Cümlənin forması",
+        "table": {
+          "headers": [
+            "Forma",
+            "Quruluş",
+            "Nümunə"
+          ],
+          "rows": [
+            [
+              "Müsbət",
+              "Subject + can + feil",
+              "He can drive."
+            ],
+            [
+              "Mənfi",
+              "Subject + can't / cannot + feil",
+              "He can't drive."
+            ],
+            [
+              "Sual",
+              "Can + subject + feil?",
+              "Can he drive?"
+            ]
+          ]
+        },
+        "note": "Can-dan sonra to işlətmirik: I can to swim yanlışdır, I can swim düzdür."
+      },
+      {
+        "heading": "Could: keçmişdə bacarıq",
+        "text": "Keçmişdə bir şeyi bacardığımızı demək üçün could işlədilir.",
+        "examples": [
+          {
+            "en": "When I was five, I could read.",
+            "az": "Beş yaşım olanda oxuya bilirdim."
+          },
+          {
+            "en": "He couldn't swim last year.",
+            "az": "O, keçən il üzə bilmirdi."
+          }
+        ]
+      },
+      {
+        "heading": "Could: nəzakətli xahiş və ehtimal",
+        "text": "Could xahişi daha nəzakətli edir. Həm də ehtimal bildirə bilər.",
+        "examples": [
+          {
+            "en": "Could you open the door, please?",
+            "az": "Qapını aça bilərsiniz, zəhmət olmasa?"
+          },
+          {
+            "en": "It could rain tomorrow.",
+            "az": "Sabah yağış yağa bilər."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-simple",
+    "title": "Present Simple",
+    "title_az": "Sadə indiki zaman",
+    "level": "A1",
+    "summary": "Vərdişlər, həmişə doğru olan faktlar və cədvəllər.",
+    "intro": "Present Simple müntəzəm təkrarlanan işləri, faktları və vərdişləri ifadə edir.",
+    "sections": [
+      {
+        "heading": "Müsbət cümlə",
+        "text": "I, you, we, they ilə feilin sadə forması işlədilir. He, she, it ilə feilə -s və ya -es əlavə olunur.",
+        "examples": [
+          {
+            "en": "I work in a bank.",
+            "az": "Mən bankda işləyirəm."
+          },
+          {
+            "en": "She works in a school.",
+            "az": "O, məktəbdə işləyir."
+          },
+          {
+            "en": "He watches TV every evening.",
+            "az": "O, hər axşam televizora baxır."
+          }
+        ],
+        "note": "-s, -sh, -ch, -x, -o ilə bitən feillərə -es əlavə olunur: watch → watches, go → goes."
+      },
+      {
+        "heading": "Mənfi cümlə və sual",
+        "table": {
+          "headers": [
+            "Forma",
+            "I / you / we / they",
+            "he / she / it"
+          ],
+          "rows": [
+            [
+              "Mənfi",
+              "I don't like tea.",
+              "She doesn't like tea."
+            ],
+            [
+              "Sual",
+              "Do you like tea?",
+              "Does she like tea?"
+            ]
+          ]
+        },
+        "note": "Does və doesn't işlənəndə əsas feil -s qəbul etmir: She doesn't works yanlışdır, She doesn't work düzdür."
+      },
+      {
+        "heading": "Nə vaxt işlədilir",
+        "text": "Vərdişlər və faktlar üçün. Tez-tez bu sözlərlə gəlir: always, usually, often, sometimes, never, every day.",
+        "examples": [
+          {
+            "en": "I usually get up at seven.",
+            "az": "Mən adətən saat yeddidə durum."
+          },
+          {
+            "en": "Water boils at 100 degrees.",
+            "az": "Su 100 dərəcədə qaynayır."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "relative-clauses",
+    "title": "Relative Clauses",
+    "title_az": "Təyin budaq cümlələri",
+    "level": "A2",
+    "summary": "who, which, whose, whom və where ilə cümlələri birləşdirmək.",
+    "intro": "Relative clause isim haqqında əlavə məlumat verir. Cümləni who, which, whose, whom və where ilə birləşdiririk. Azərbaycan dilində bunlar çox vaxt \"ki\" və ya \"-an/-ən\" şəkilçisi ilə ifadə olunur.",
+    "sections": [
+      {
+        "heading": "Qısa cədvəl",
+        "table": {
+          "headers": [
+            "Söz",
+            "Mənası",
+            "Nə üçün"
+          ],
+          "rows": [
+            [
+              "who",
+              "kim",
+              "insanlar (that ilə əvəz oluna bilər)"
+            ],
+            [
+              "which",
+              "hansı",
+              "əşyalar (that ilə əvəz oluna bilər)"
+            ],
+            [
+              "whose",
+              "kimin",
+              "mənsubiyyət: whose + isim"
+            ],
+            [
+              "whom",
+              "kimə, kimi",
+              "whom + mübtəda"
+            ],
+            [
+              "where",
+              "harada",
+              "yer"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "1. Who: kim",
+        "text": "Oxunuşu: who – «Hu», that – «Dət». Who insanlar haqqında danışanda işlədilir. Onun sinonimi that-dır.",
+        "examples": [
+          {
+            "en": "There is a woman in the room, who is a doctor.",
+            "az": "Otaqda bir qadın var, kim ki o həkimdir."
+          },
+          {
+            "en": "There is a boy who can speak English.",
+            "az": "İngilis dilində danışa bilən bir oğlan var."
+          },
+          {
+            "en": "There is a boy that can speak English.",
+            "az": "İngilis dilində danışa bilən bir oğlan var."
+          }
+        ]
+      },
+      {
+        "heading": "2. Which: hansı",
+        "text": "Oxunuşu: which – «Viç», that – «Dət». Which əşyalar haqqında danışanda işlədilir. Onun da sinonimi that-dır. Which sual cümləsində də işlənir.",
+        "examples": [
+          {
+            "en": "Which country do you like?",
+            "az": "Hansı ölkəni sevirsən?"
+          },
+          {
+            "en": "There is a car which he should clean.",
+            "az": "Onun təmizləməli olduğu bir maşın var."
+          },
+          {
+            "en": "There is a car that he should clean.",
+            "az": "Onun təmizləməli olduğu bir maşın var."
+          }
+        ]
+      },
+      {
+        "heading": "3. Whose: kimin",
+        "text": "Oxunuşu: whose – «Huz». Whose-dan sonra isim gəlir: whose + noun. Mənsubiyyəti bildirir.",
+        "examples": [
+          {
+            "en": "Whose ideas are those?",
+            "az": "Bu ideyalar kimindir?"
+          },
+          {
+            "en": "I know this girl whose sister lives in Italy.",
+            "az": "Mən bacısı İtaliyada yaşayan bu qızı tanıyıram."
+          },
+          {
+            "en": "I should know whose book this is.",
+            "az": "Mən bilməliyəm bu kitab kimindir."
+          },
+          {
+            "en": "There is a doctor whose hospital is in the city center and he can treat people.",
+            "az": "Mərkəzdə xəstəxanası olan bir həkim var və o, insanları müalicə edə bilir."
+          }
+        ],
+        "note": "Sual cümləsində Whose book is this? deyirik. Cümlənin içində isə sözlərin sırası dəyişir: I should know whose book this is."
+      },
+      {
+        "heading": "4. Whom: kimə, kimi",
+        "text": "Oxunuşu: whom – «Hum». Whom-dan sonra mübtəda gəlir: whom + subject. Whom cümlədə tamamlıq rolundadır.",
+        "examples": [
+          {
+            "en": "This is Mark, whom you know.",
+            "az": "Bu Markdır, kimi ki sən tanıyırsan."
+          }
+        ],
+        "note": "Gündəlik danışıqda whom əvəzinə çox vaxt who deyilir. Yazıda və dərslərdə whom işlətmək düzgündür."
+      },
+      {
+        "heading": "5. Where: harada",
+        "text": "Oxunuşu: where – «Veər». Where yer haqqında danışanda işlədilir. Həm sual, həm də relative clause kimi işlənir.",
+        "examples": [
+          {
+            "en": "Where is your school?",
+            "az": "Məktəbin haradadır?"
+          },
+          {
+            "en": "Where do you go at 5 o'clock?",
+            "az": "Saat 5-də hara gedirsən?"
+          },
+          {
+            "en": "There is a new park, where people could rest.",
+            "az": "Yeni park var, harada ki orada insanlar dincələ bilər."
+          },
+          {
+            "en": "There is a new park, which is next to my house.",
+            "az": "Evimin yanında yeni park var."
+          }
+        ],
+        "note": "Where yeri bildirir (orada). Which isə əşyanın özü haqqında məlumat verir (park necədir, harada yerləşir)."
+      },
+      {
+        "heading": "Vergül haqqında",
+        "text": "Əlavə məlumat verəndə cümləni vergüllə ayırırıq. Belə cümlələrdə that işlətmək olmaz.",
+        "examples": [
+          {
+            "en": "My brother, who lives in London, is a teacher.",
+            "az": "London-da yaşayan qardaşım müəllimdir."
+          }
+        ]
+      }
+    ]
+  }
+]
