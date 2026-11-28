@@ -209,6 +209,107 @@
     ]
   },
   {
+    "lesson": "Kingsway 2",
+    "words": [
+      {
+        "word": "Cozy",
+        "meaning": "Rahat, yumorlu, isti bir mühitdə olan",
+        "pronunciation_az": "Kouzi",
+        "example": "This room is very cozy.",
+        "example_az": "Bu otaq çox rahatdır.",
+        "level": "A2"
+      },
+      {
+        "word": "Take care",
+        "meaning": "Özünə qulluq etmək / Diqqətli ol",
+        "pronunciation_az": "Teyk keər",
+        "example": "Take care of yourself!",
+        "example_az": "Özünə yaxşı bax!",
+        "level": "A1"
+      },
+      {
+        "word": "Bright",
+        "meaning": "Parlaq, işıqlı, ağıllı",
+        "pronunciation_az": "Brayt",
+        "example": "The sun is very bright today.",
+        "example_az": "Günəş bu gün çox parlaqdır.",
+        "level": "A1"
+      },
+      {
+        "word": "Gap",
+        "meaning": "Boşluq, aralıq, fərq",
+        "pronunciation_az": "Qep",
+        "example": "There is a gap between the two walls.",
+        "example_az": "İki divar arasında boşluq var.",
+        "level": "A2"
+      },
+      {
+        "word": "Fill",
+        "meaning": "Doldurmaq",
+        "pronunciation_az": "Fil",
+        "example": "Fill the glass with water.",
+        "example_az": "Stəkanı su ilə doldur.",
+        "level": "A1"
+      },
+      {
+        "word": "Explains",
+        "meaning": "İzah edir",
+        "pronunciation_az": "Ekspleyns",
+        "example": "The teacher explains the lesson clearly.",
+        "example_az": "Müəllim dərsi aydın izah edir.",
+        "level": "A2"
+      },
+      {
+        "word": "Field",
+        "meaning": "Sahə, tarla, meydan",
+        "pronunciation_az": "Fild",
+        "example": "The children play in the field.",
+        "example_az": "Uşaqlar tarlada oynayırlar.",
+        "level": "A1"
+      },
+      {
+        "word": "Kitten",
+        "meaning": "Pişik balası",
+        "pronunciation_az": "Kitn",
+        "example": "The kitten is playing with a ball.",
+        "example_az": "Pişik balası top ilə oynayır.",
+        "level": "A1"
+      },
+      {
+        "word": "Spear",
+        "meaning": "Nizə",
+        "pronunciation_az": "Spiər",
+        "example": "The hunter threw a spear.",
+        "example_az": "Ovçu nizə atdı.",
+        "level": "B1"
+      },
+      {
+        "word": "Have fun",
+        "meaning": "Əylənmək, əyləncəli vaxt keçirmək",
+        "pronunciation_az": "Həv fan",
+        "example": "We had fun at the party.",
+        "example_az": "Biz partiyada əyləndik.",
+        "level": "A1"
+      },
+      {
+        "word": "Opportunity",
+        "meaning": "Fürsət, imkan",
+        "pronunciation_az": "Opətyuniti",
+        "example": "This is a good opportunity to learn English.",
+        "example_az": "Bu, ingilis dili öyrənmək üçün yaxşı fürsətdir.",
+        "level": "B1"
+      },
+      {
+        "word": "Fair",
+        "meaning": "Ədalətli / yarmarka / açıq rəngli",
+        "pronunciation_az": "Feər",
+        "example": "The decision was fair.",
+        "example_az": "Qərar ədalətli idi.",
+        "level": "A2"
+      }
+    ]
+  },
+  {
     "lesson": "In the Kitchen",
     "words": [
       {

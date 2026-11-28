@@ -160,6 +160,154 @@
     ]
   },
   {
+    "id": "have-has",
+    "title": "Have / Has",
+    "title_az": "Var, malik olmaq",
+    "level": "A1",
+    "summary": "have got / has got və have / has: \"var\", \"malikdir\" mənasında.",
+    "intro": "Have və has \"var\" və ya \"malik olmaq\" mənasını verir. İngilis dilində bunu iki cür demək olar: have got / has got və have / has. İkisinin də mənası eynidir, amma mənfi cümlə və sual düzəltmə qaydaları fərqlidir.",
+    "sections": [
+      {
+        "heading": "1. Have got / Has got",
+        "text": "Oxunuşu: have – «Hev», has – «Hez», got – «Qot». I, you, we, they ilə have got, he, she, it ilə has got işlədilir. Quruluş: subject + have / has got + noun.",
+        "table": {
+          "headers": [
+            "Mübtəda",
+            "Forma"
+          ],
+          "rows": [
+            [
+              "I, you, we, they",
+              "have got"
+            ],
+            [
+              "he, she, it",
+              "has got"
+            ]
+          ]
+        },
+        "examples": [
+          {
+            "en": "Children have got candies.",
+            "az": "Uşaqların konfetləri var."
+          },
+          {
+            "en": "Have children got candies?",
+            "az": "Uşaqların konfetləri var?"
+          },
+          {
+            "en": "Children have not (haven't) got candies.",
+            "az": "Uşaqların konfetləri yoxdur."
+          }
+        ],
+        "note": "Sualda have / has cümlənin əvvəlinə keçir, mənfidə have / has-dan sonra not əlavə olunur: have not = haven't, has not = hasn't. Danışıqda qısa forma da işlədilir: I've got, she's got."
+      },
+      {
+        "heading": "2. Have / Has",
+        "text": "Oxunuşu: do – «Du», does – «Daz», don't – «Dount», doesn't – «Dazınt». I, you, we, they ilə have və do, he, she, it ilə has və does işlədilir. Quruluş: subject + have / has + noun. Bu formada mənfi cümlə və sual do / does ilə qurulur.",
+        "table": {
+          "headers": [
+            "Mübtəda",
+            "Müsbət",
+            "Köməkçi feil"
+          ],
+          "rows": [
+            [
+              "I, you, we, they",
+              "have",
+              "do"
+            ],
+            [
+              "he, she, it",
+              "has",
+              "does"
+            ]
+          ]
+        },
+        "examples": [
+          {
+            "en": "You have an opportunity.",
+            "az": "Sənin imkanın var."
+          },
+          {
+            "en": "Do you have an opportunity?",
+            "az": "Sənin imkanın var?"
+          },
+          {
+            "en": "You don't have an opportunity.",
+            "az": "Sənin imkanın yoxdur."
+          }
+        ],
+        "note": "do + not = don't, does + not = doesn't."
+      },
+      {
+        "heading": "He, she, it ilə: does və has",
+        "text": "He, she, it ilə sualda does, mənfidə doesn't işlədilir. Bu zaman əsas feil has yox, have olur.",
+        "examples": [
+          {
+            "en": "Julia has a secret.",
+            "az": "Culiyanın sirri var."
+          },
+          {
+            "en": "Does Julia have a secret?",
+            "az": "Culiyanın sirri var?"
+          },
+          {
+            "en": "Julia does not (doesn't) have a secret.",
+            "az": "Culiyanın sirri yoxdur."
+          }
+        ],
+        "note": "Does / doesn't-dən sonra has yazmaq olmaz, çünki cümlədə s artıq does-dadır, iki s olmaz. Yanlış: Does Julia has a secret? Düz: Does Julia have a secret?"
+      },
+      {
+        "heading": "Diqqət: iki forma qarışmasın",
+        "text": "Do / does / don't / doesn't ilə have got işlədilmir. Mənfi və sual düzəldərkən ya have got forması ilə haven't got / Have you got...? yazırıq, ya da have forması ilə don't have / Do you have...? yazırıq.",
+        "table": {
+          "headers": [
+            "Düz",
+            "Yanlış"
+          ],
+          "rows": [
+            [
+              "You don't have an opportunity.",
+              "You don't have got an opportunity."
+            ],
+            [
+              "You haven't got an opportunity.",
+              "You don't have got an opportunity."
+            ],
+            [
+              "Do you have a pen?",
+              "Do you have got a pen?"
+            ],
+            [
+              "Have you got a pen?",
+              "Do you have got a pen?"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Have başqa mənalarda",
+        "text": "Have həm də \"yemək, içmək, etmək\" mənalarında işlədilir. Bu mənada yalnız have / has (do / does ilə) işlənir, have got işlədilmir.",
+        "examples": [
+          {
+            "en": "We have lunch at one o'clock.",
+            "az": "Biz saat birdə nahar edirik."
+          },
+          {
+            "en": "I have a shower every morning.",
+            "az": "Mən hər səhər duş qəbul edirəm."
+          },
+          {
+            "en": "Does she have breakfast at home?",
+            "az": "O, səhər yeməyini evdə yeyir?"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "relative-clauses",
     "title": "Relative Clauses",
     "title_az": "Təyin budaq cümlələri",
